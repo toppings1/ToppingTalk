@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>50</x>
+      <y>0</y>
+      <w>490</w>
+      <h>410</h>
+    </coordinates>
+    <panel_attributes>Member
+--
+id:String
+pw:String
+name:String
+phoneNo:Sting
+gender:String
+profile:Profile
+--
+Member()
+Member(id:String, pw:String, name:String, phoneNo:String)
+Member(id:String, pw:String, name:String, phoneNo:String, profile:Profile)
+Member(id:String, pw:String, name:String, phoneNo:String, gender:String, profile:Profile)
+setId(id:String)
+getId():String
+setPw(pw:String)
+getPw():String
+setName(name:String)
+getName():String
+setPhoneNo(phoneNo:String)
+getPhoneNo():String
+setGender(gender:String)
+getGender():String
+setProfile(profile:Profile)
+getProfile():Profile
+equals(obj:Object)
+toString():String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>610</x>
+      <y>0</y>
+      <w>420</w>
+      <h>270</h>
+    </coordinates>
+    <panel_attributes>Profile
+--
+nickName:String
+profilePicture:String
+statusMsg:String
+--
+Profile()
+Profile(nickName:String)
+Profile(nickName:String, profilePicture:String)
+Profile(nickName:String, profilePicture:String, statusMsg:String)
+setNickName(nickName:String)
+getNickName():String
+setProfilePicture(profilePicture:String)
+getProfilePicture():String
+setStatusMsg(statusMsg:String)
+getStatusMsg():String
+equals(obj:Object)
+toString():String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>530</x>
+      <y>60</y>
+      <w>100</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;80.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>50</x>
+      <y>440</y>
+      <w>490</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>ChatRoom
+--
+roomNo:int
+roomName:Sting
+participants:String
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>610</x>
+      <y>440</y>
+      <w>290</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>Message
+--
+sender:String
+message:String
+roomNo:int
+nonConfirms:String[]
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>610</x>
+      <y>630</y>
+      <w>290</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>WhisperMessage
+--
+receiver:String
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>750</x>
+      <y>590</y>
+      <w>30</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>530</x>
+      <y>500</y>
+      <w>100</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;10.0;80.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>50</x>
+      <y>640</y>
+      <w>190</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Setting
+--
+mode:String
+backgroundImg:String
+fontSize:int
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

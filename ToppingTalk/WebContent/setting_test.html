@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+<script type="text/javascript">
+	var font_size = 10;
+	
+	function fontUp(tag){
+		font_size += 2;
+		console.log(tag);
+		
+		$('body').css('font-size', font_size + 'pt');
+	}
+	
+	function fontDown(tag){
+		font_size -= 2;
+		console.log(tag);
+		
+		$('body').css('font-size', font_size + 'pt');
+	}
+	
+	function changeBG(){
+		var file = $('input#bg-file').val();
+		console.log(file.split('\\')[file.split('\\').length - 1]);
+		console.log(location.origin + '/ToppingTalk/');
+		console.log(location.origin + '/ToppingTalk/' + file.split('\\')[file.split('\\').length - 1]);
+		$('body').css('background-image', 'url(' +location.origin + '/ToppingTalk/' + file.split('\\')[file.split('\\').length - 1] +')');
+	}
+
+	$(document).ready(function(){
+		$('input#font-up').click(fontUp);
+		$('input#font-down').click(fontDown);
+		$('input#change').click(changeBG);
+	});
+</script>
+</head>
+<body>
+	<p>abcd</p>
+	<input type="button" id="font-up" value="font-up"/>
+	<input type="button" id="font-down" value="font-down"/>
+	
+	<input type="file" id="bg-file"/>
+	<input type="button" id="change" value="change-bg"/>
+</body>
+</html>

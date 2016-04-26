@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script>
+
+ var msg = new SpeechSynthesisUtterance();
+
+msg.lang = 'ko-KR';
+
+function ttsTest(){
+
+ // var voices = speechSynthesis.getVoices();
+
+ //  msg.voice = voices[9];
+
+ // Note: some voices don't support altering params
+
+ // msg.voiceURI = 'Google 한국의';
+
+ // msg.voiceURI = 'native';
+
+ // msg.volume = 0; // 0 to 1
+
+ //  msg.rate = 0.1;
+
+ // 0.1 to 10
+
+ //  msg.pitch = 0.1;
+
+ //0 to 2
+
+ //  msg.lang = 'ja-JP';
+
+ //  msg.lang = 'en-US';
+
+ msg.text = document.getElementById('inText').value;
+
+ speechSynthesis.speak(msg);
+
+ }
+
+function setLang(langTxt){
+
+ msg.lang = langTxt;
+
+}
+
+</script>
+
+<input id="inText" type="text" value='TTS 테스트 입니다.' ><br>
+
+<input type="button" onclick="setLang('ko-KR'); ttsTest();" value="한국어" ><br>
+
+<input type="button" onclick="setLang('en-US'); ttsTest();" value="영어" ><br>
+</body>
+</html>
