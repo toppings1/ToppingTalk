@@ -4,8 +4,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>50</x>
-      <y>0</y>
+      <x>70</x>
+      <y>40</y>
       <w>490</w>
       <h>410</h>
     </coordinates>
@@ -41,8 +41,8 @@ toString():String</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>610</x>
-      <y>0</y>
+      <x>630</x>
+      <y>40</y>
       <w>420</w>
       <h>270</h>
     </coordinates>
@@ -69,8 +69,8 @@ toString():String</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>530</x>
-      <y>60</y>
+      <x>550</x>
+      <y>100</y>
       <w>100</w>
       <h>30</h>
     </coordinates>
@@ -80,8 +80,8 @@ toString():String</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>50</x>
-      <y>440</y>
+      <x>70</x>
+      <y>480</y>
       <w>490</w>
       <h>170</h>
     </coordinates>
@@ -96,8 +96,8 @@ participants:String
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>610</x>
-      <y>440</y>
+      <x>630</x>
+      <y>480</y>
       <w>290</w>
       <h>160</h>
     </coordinates>
@@ -113,8 +113,8 @@ nonConfirms:String[]
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>610</x>
-      <y>630</y>
+      <x>630</x>
+      <y>670</y>
       <w>290</w>
       <h>130</h>
     </coordinates>
@@ -127,8 +127,8 @@ receiver:String
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>750</x>
-      <y>590</y>
+      <x>770</x>
+      <y>630</y>
       <w>30</w>
       <h>60</h>
     </coordinates>
@@ -138,8 +138,8 @@ receiver:String
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>530</x>
-      <y>500</y>
+      <x>550</x>
+      <y>540</y>
       <w>100</w>
       <h>30</h>
     </coordinates>
@@ -149,8 +149,8 @@ receiver:String
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>50</x>
-      <y>640</y>
+      <x>70</x>
+      <y>680</y>
       <w>190</w>
       <h>120</h>
     </coordinates>
